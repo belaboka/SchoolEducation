@@ -4,13 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/font-awesome/css/font-awesome.min.css">
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline text-red-300 font-outfit">
-    Hello world! 
-  </h1>
-    <h1 class="text-3xl font-bold underline text-red-300 font-raleway">
-    Hello world! 
-  </h1>
+<body class="bg-[#FFF5F0] flex flex-col h-screen">
+
+    <header class="px-2 pt-2 grid gap-y-4">
+        <div class="border-2 py-2 rounded-xl bg-linear-to-r from-orange-200 to-orange-400 flex items-center justify-center gap-x-4">
+            <p class="font-outfit text-xl">Admission is Open, Grab your seat now 
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </p>
+        </div>
+        <div class="flex w-full">
+            <a href="" class="flex items-center bg-orange-400 py-4 px-2 rounded-l-xl border-l-2 border-t-2 border-b-2">
+                <img src="/src/images/logo.png" alt="" class="h-8">
+                Little Learners
+            </a>
+            <div class="flex-grow border-y-2 h-full"></div>
+            <nav class="flex h-full">
+                <a href="" class="flex items-center px-4 border-s-2 border-y-2 h-full bg-orange-200">Home</a>
+                <a href="" class="flex items-center px-4 border-s-2 border-y-2 h-full">About Us</a>
+                <a href="" class="flex items-center px-4 border-s-2 border-y-2 h-full">Academics</a>
+                <a href="" class="flex items-center px-4 border-s-2 border-y-2 h-full">Admissions</a>
+                <a href="" class="flex items-center px-4 border-s-2 border-y-2 h-full">Student Life</a>
+                <a href="" class="flex items-center px-4 border-s-2 border-y-2 h-full rounded-r-xl bg-orange-400">Contact</a>
+            </nav>
+        </div>
+
+    </header>
+    <main class="flex-grow">main</main>
+    <footer>footer</footer>
+
 </body>
 </html>
