@@ -13,6 +13,8 @@
     --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --font-outfit: "Outfit", sans-serif;
+    --font-raleway: "Raleway", sans-serif;
   }
 }
 @layer base {
@@ -164,18 +166,11 @@
   }
 }
 @layer utilities {
-  .table {
-    display: table;
+  .font-outfit {
+    font-family: var(--font-outfit);
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
+  .font-raleway {
+    font-family: var(--font-raleway);
   }
   .text-3xl {
     font-size: var(--text-3xl);
@@ -191,31 +186,39 @@
   .underline {
     text-decoration-line: underline;
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
 }
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
+@font-face {
+  font-family: "Outfit";
+  font-weight: 600;
+  font-display: swap;
+  src: url("./fonts/Outfit-Medium.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Outfit";
+  font-weight: 900;
+  font-display: swap;
+  src: url("./fonts/Outfit-ExtraBold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/Raleway-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Raleway";
+  font-weight: 900;
+  font-display: swap;
+  src: url("./fonts/Raleway-ExtraBold.woff2") format("woff2");
 }
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
     }
   }
 }
