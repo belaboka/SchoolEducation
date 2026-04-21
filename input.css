@@ -9,14 +9,14 @@
 
 @font-face {
   font-family: "Outfit";
-  font-weight: 600;
+  font-weight: 500;
   font-display: swap;
   src: url("fonts/Outfit-Medium.ttf") format("ttf");
 }
 
 @font-face {
   font-family: "Outfit";
-  font-weight: 900;
+  font-weight: 800;
   font-display: swap;
   src: url("fonts/Outfit-ExtraBold.ttf") format("ttf");
 }
@@ -30,7 +30,7 @@
 
 @font-face {
   font-family: "Raleway";
-  font-weight: 900;
+  font-weight: 800;
   font-display: swap;
   src: url("fonts/Raleway-ExtraBold.woff2") format("woff2");
 }
